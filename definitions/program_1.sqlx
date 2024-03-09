@@ -1,0 +1,14 @@
+config {
+  type: "table",
+  name: "prg_1",
+}
+js {
+ const foo = 1;
+ function bar(number){
+     return number+1;
+ }
+}
+
+SELECT
+ ${foo} AS one,
+ ${bar(foo)} AS two
