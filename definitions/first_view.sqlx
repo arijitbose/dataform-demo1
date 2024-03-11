@@ -3,7 +3,7 @@ config {
   name: "prg_one",
 }
 js {
- const foo = 1;
+ const foo = 134556;
  function bar(number){
      return number+1;
  }

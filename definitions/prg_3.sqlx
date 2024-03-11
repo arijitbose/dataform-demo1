@@ -1,0 +1,29 @@
+config {
+  type: "table",
+  name: "prg_three",
+}
+js {
+    const fo = 1345565678;
+
+ function bar(number){
+    a=number.toString()
+    b= a.split('')
+    var largest = b[0]
+    c=b.length
+    for (var i = 0; i < c; i++) {
+  if (b[i] > largest ) {
+    largest = b[i];
+  }
+}
+
+    return largest
+
+
+
+
+ }
+}
+
+SELECT
+ ${fo} AS one,
+ ${bar(fo)} AS two

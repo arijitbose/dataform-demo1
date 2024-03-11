@@ -1,0 +1,26 @@
+config {
+  type: "table",
+  name: "prg_two",
+}
+js {
+ const foo = 1345565678;
+ let count=0
+ function bar(number){
+  while(number != 0){
+    number = Math.floor(number/=10)
+    count =count+1
+
+
+
+
+
+  }
+  
+  return count;
+
+ }
+}
+
+SELECT
+ ${foo} AS one,
+ ${bar(foo)} AS two
